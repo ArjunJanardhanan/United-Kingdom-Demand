@@ -1,0 +1,6 @@
+/* styles.css */
+body {
+    background-color: rgba(0, 0, 0, 0);  /* Transparent background */
+    color: white;  /* White font color */
+    font-family: Arial, sans-serif;  /* Specify Arial font family */
+}
