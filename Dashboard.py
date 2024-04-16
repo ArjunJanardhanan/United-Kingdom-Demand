@@ -583,7 +583,7 @@ def display_tab_content(*args):
     
     if triggered_button == "tab-1-link":
         return html.Div([
-                            html.H1('United kingdom Hourly Electricity Demand',style=content_style),
+                            html.H1('United Kingdom Hourly Electricity Demand',style=content_style),
                             html.H6("Explore electricity demand in UK with weather",style=content_style),
                             html.Div("Historic Demand Data (2021 to 2023) and weather data (London, Cardiff & Glasgow) is used to predict National Demand",style=content_style),
                             html.Div("Go to another tab in sidebar to explore ", style={"font-style": "italic",'text-align': 'center'}),
@@ -657,9 +657,10 @@ def display_tab_content(*args):
                             html.H4('Next Hour National Demand Prediction', style=content_style),
                             html.Div([
                                         html.Span("Last recorded time is "),
-                                        html.Span(" (Real-time updation from "),
+				    	" ",
+                                        html.Span("(Real-time updation from "),
                                         " ",
-                                        html.A(" National Grid ESO", href="https://www.nationalgrideso.com/", target="_blank"),  # Opens link in a new tab
+                                        html.A("National Grid ESO", href="https://www.nationalgrideso.com/", target="_blank"),  # Opens link in a new tab
                                         html.Span(f") : {last_hour}")
                                     ], style=content_style),
                             html.Br(),
