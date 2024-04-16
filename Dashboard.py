@@ -611,7 +611,7 @@ def display_tab_content(*args):
                         ])
     elif triggered_button == "tab-2-link":
         return html.Div([
-                            html.H4('United kingdom Hourly Electricity & Weather Data (2021 to 2023)', style=content_style),
+                            html.H4('United Kingdom Hourly Electricity & Weather Data (2021 to 2023)', style=content_style),
                             html.Label('Select the data-set to visualize in the plot below:',style=content_style),
                             dcc.Checklist(
                                 id='feature_checklist',
