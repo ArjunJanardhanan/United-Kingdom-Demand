@@ -823,7 +823,7 @@ def update_graph2(selected_features,selected_feature):
 def update_predicted_value(selected_method):
     if selected_method in d_next_hour:
         predicted_value = d_next_hour[selected_method]
-        return f'Predicted National Demand for next hour using {selected_method}: {predicted_value} MW'
+        return f'Predicted National Demand for the next hour using {selected_method}: {predicted_value} MW'
     else:
         return 'DATA UNAVAILABLE'  # Return empty string if the selected method is not found in the dictionary
 
