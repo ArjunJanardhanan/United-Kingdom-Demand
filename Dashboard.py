@@ -499,7 +499,11 @@ heatmap_fig.update_layout(xaxis_title='Error type', yaxis_title='Methods', plot_
 
 # Define sidebar content
 sidebar = html.Div(
-    [   html.H4("MENU", style={"color": "white","margin-bottom": "60px", 'text-align': 'center'}),
+    [   html.Br(),
+	html.H4("M E N U", style={"color": "white", 'text-align': 'center'}),
+     	html.Hr(style={"border-top": "1px solid white"}), 
+     	html.Br(),
+     	html.Br(),
         dbc.Nav(
             [
                 dbc.NavItem(dbc.NavLink("HOME", id="tab-1-link", href="#")),
@@ -747,7 +751,7 @@ def display_tab_content(*args):
                         ])
     else:
         return html.Div([
-                            html.H1('United kingdom Hourly Electricity Demand',style=content_style),
+                            html.H1('United Kingdom Hourly Electricity Demand',style=content_style),
                             html.H6("Explore electricity demand in UK with weather",style=content_style),
                             html.Div("Historic Demand Data (2021 to 2023) and weather data (London, Cardiff & Glasgow) is used to predict National Demand",style=content_style),
                             html.Div("Go to another tab in sidebar to explore ", style={"font-style": "italic",'text-align': 'center'}),
