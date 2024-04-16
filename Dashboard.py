@@ -19,7 +19,7 @@ external_stylesheets = ['https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/
 
 
 app = dash.Dash(__name__, external_stylesheets = external_stylesheets ,suppress_callback_exceptions=True)
-
+server=app.server
 
 
 # Define global styles
