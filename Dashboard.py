@@ -534,7 +534,7 @@ content = html.Div(
             ],
             style={"padding": "20px"},
         ),
-        html.Div("Content loading.....Choose an option in menu", id="main-content"),
+        html.Div("LOADING..............", id="main-content"),
         
     ],
 )
@@ -657,9 +657,9 @@ def display_tab_content(*args):
                             html.H4('Next Hour National Demand Prediction', style=content_style),
                             html.Div([
                                         html.Span("Last recorded time is"),
-				    	" ",
+				    	html.Span("\u00A0"),
                                         html.Span("(Real-time updation from"),
-                                        " ",
+                                        html.Span("\u00A0"),
                                         html.A("National Grid ESO", href="https://www.nationalgrideso.com/", target="_blank"),  # Opens link in a new tab
                                         html.Span(f") : {last_hour}")
                                     ], style=content_style),
