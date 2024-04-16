@@ -656,10 +656,10 @@ def display_tab_content(*args):
         return html.Div([
                             html.H4('Next Hour National Demand Prediction', style=content_style),
                             html.Div([
-                                        html.Span("Last recorded time is "),
-				    	html.Span("&nbsp;"),
-                                        html.Span("(Real-time updation from "),
-                                        html.Span("&nbsp;"),
+                                        html.Span("Last recorded time is"),
+				    	" ",
+                                        html.Span("(Real-time updation from"),
+                                        " ",
                                         html.A("National Grid ESO", href="https://www.nationalgrideso.com/", target="_blank"),  # Opens link in a new tab
                                         html.Span(f") : {last_hour}")
                                     ], style=content_style),
