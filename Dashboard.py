@@ -518,7 +518,7 @@ sidebar = html.Div(
             pills=True,
         ),
     ],
-    style={"background-color": "#050505", "height": "100vh", "padding": "20px"},
+    style={"background-color": "#2b2b2b", "height": "100vh", "padding": "20px"},
 )
 
 # Define main content
