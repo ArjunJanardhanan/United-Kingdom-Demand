@@ -552,11 +552,11 @@ app.layout = html.Div(
                     sidebar,
                     width=3,
                     id="sidebar-col",
-                    style={"height": "100vh", "overflowY": "auto"},
+                    style={"height": "100vh", "overflowY": "auto", "overflowX": "auto"},
                 ),
                 dbc.Col(
                     content,
-                    style={"height": "100vh", "overflowY": "auto"},
+                    style={"height": "100vh", "overflowY": "auto", "overflowX": "auto"},
                 ),
             ],
             style={"margin": "0px"},
