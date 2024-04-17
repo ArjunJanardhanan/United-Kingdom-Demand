@@ -500,7 +500,7 @@ heatmap_fig.update_layout(xaxis_title='Error type', yaxis_title='Methods', plot_
 # Define sidebar content
 sidebar = html.Div(
     [   html.Br(),
-	html.H4("☰ M E N U ☰", style={"color": "white", 'text-align': 'center'}),
+	html.H4("M E N U", style={"color": "white", 'text-align': 'center'}),
      	html.Hr(style={"border-top": "1px solid white"}), 
      	html.Br(),
         dbc.Nav(
